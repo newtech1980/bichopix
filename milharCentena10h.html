@@ -134,7 +134,7 @@
 </head>
 <body>
     <div class="container">
-     <h1><h>RIFA</h> MILHAR e CENTENA <h>10:00h</h><br><git> R$ 1.00 </git>GANHA<git> R$ 4.000.00</git></h1>
+     <h1><h>RIFA</h> MILHAR e CENTENA <h>10:00h</h><br><git> R$ 1.00 </git>GANHA<git> R$ 5.000.00</git></h1>
 <h2> MULTIJOGO </h2><br>
         <input type="tel" id="valorInput" placeholder="Digite o valor" maxlength="2"><br>
         <input type="text" id="nomeInput" placeholder="Digite seu nome">
@@ -213,7 +213,7 @@
 
     if (horaAtual > 9 || (horaAtual === 9 && minutosAtual > 50)) {
         document.getElementById('botaoCalcular').disabled = true;
-        alert('O tempo limite para JOGAR foi Excedido ATE 20:50.');
+        alert('O tempo limite para JOGAR foi Excedido ATE 9:50.');
         return;
     }
 
@@ -222,11 +222,11 @@
         if (!isNaN(valor)) {
             var total;
             if (premio === "1a5premio") {
-                total = valor * 2350 / 5;
+                total = valor * 2850 / 5;
             } else if (premio === "1a10premio") {
-                total = valor * 2350 / 10;
+                total = valor * 2850 / 10;
             } else {
-                total = valor * 2350;
+                total = valor * 2850;
             }
             var totalPagar = valor * milhares.length;
             showModal(nome, totalPagar, total);
